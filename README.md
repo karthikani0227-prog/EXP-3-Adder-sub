@@ -18,7 +18,7 @@ half_add_sub.v	Arithmetic-circuit RTL
 half_add_sub_tb.v	Stimulus and VCD generation
 
 ### Verilog Program
-```
+
 module half_adder (
     input  wire A,
     input  wire B,
@@ -39,9 +39,9 @@ module half_subtractor (
     assign Borrow = (~A) & B;  // A' . B
 endmodule
 
-```
+
 ### Testbench Program
-```
+
 module tb3;
     reg A, B;
     wire Sum, Carry;
@@ -79,7 +79,7 @@ module tb3;
         #10 $finish;
     end
 endmodule
-```
+
 
 ### Truth Table
 
@@ -142,7 +142,9 @@ The Half Adder and Half Subtractor were realized using Verilog HDL:
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis, matching the expected truth table.
 
 ### Output
-<img width="1920" height="1080" alt="exp3" src="https://github.com/user-attachments/assets/1a4e5a3f-61dc-465a-920e-7cea72580184" />
+<img width="1920" height="1080" alt="exp3a" src="https://github.com/user-attachments/assets/568e189b-2af6-4d67-9177-2bf12ca897db" />
+<img width="1920" height="1080" alt="exp3b" src="https://github.com/user-attachments/assets/3efdc379-0391-4e8b-8494-801853364aa5" />
+
 
 
 ### Viva-Voce Questions
